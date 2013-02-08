@@ -26,7 +26,7 @@ fi
 tarfile=$product-$version.tar.gz
 
 rm -rf build
-files=`find . -regex ".*\.\(py\|spec\|cfg\)"`
+files=`find . -name "*.py" -o -name "*.cfg" -o -name "*.spec"`
 files+="
 makefile
 LICENSE
