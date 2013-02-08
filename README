@@ -7,6 +7,10 @@ out using temporary files (fs writes not supported on the platform).
 to build, use `./sdist appengine` to build the tgz and upload to the cheeseshop
 of your choice.
 
+TODOS
+=====
+
+ * Make it more performant by storing the wsdl cache in MemCache instead of NoCache.
 
 OVERVIEW
 
