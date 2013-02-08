@@ -2,3 +2,4 @@
 .hgtags
 .project
 .pydevproject
+dist/
