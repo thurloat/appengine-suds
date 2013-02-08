@@ -16,12 +16,11 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 # written by: Jeff Ortel ( jortel@redhat.com )
 
-import sys
 import suds
 from setuptools import setup, find_packages
 
 setup(
-    name="suds",
+    name="appengine-suds",
     version=suds.__version__,
     description="Lightweight SOAP client",
     author="Jeff Ortel",
