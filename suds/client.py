@@ -33,7 +33,7 @@ from sudsobject import Object
 from suds.resolver import PathResolver
 from suds.builder import Builder
 from suds.wsdl import Definitions
-from suds.cache import ObjectCache
+from suds.cache import ObjectCache, NoCache
 from suds.sax.document import Document
 from suds.sax.parser import Parser
 from suds.options import Options
@@ -106,7 +106,7 @@ class Client(object):
         options = Options()
         options.transport = HttpAuthenticated()
         self.options = options
-        options.cache = ObjectCache(days=1)
+        options.cache = NoCache() 
         self.set_options(**kwargs)
         reader = DefinitionsReader(options, Definitions)
         self.wsdl = reader.open(url)
